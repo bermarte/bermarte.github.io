@@ -208,7 +208,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'FontAwesome';
 				font-weight: 900;
 			}
 
@@ -219,7 +219,7 @@ input, select, textarea {
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '\f105';
+				content: " ";
 				display: inline-block;
 				font-size: 1.25em;
 				height: 2em;
@@ -230,6 +230,19 @@ input, select, textarea {
 				vertical-align: middle;
 				width: 2em;
 			}
+			a.deviant:not(.button):before {
+				content: "\f1bd";
+			}
+			a.soundcloud:not(.button):before {
+				content: "\f1be";
+			}
+			a.linkedin:not(.button):before {
+				content: "\f0e1";
+			}
+			a.github:not(.button):before {
+				content: "\f09b";
+			}
+			f0e1
 
 			a.special:not(.button):hover:before {
 				background-color: rgba(255, 255, 255, 0.025);
