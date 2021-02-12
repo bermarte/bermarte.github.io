@@ -16,7 +16,7 @@
 ## User Story Dependencies
 
 <p align="center">
-  <img src="./diagram.png" alt="screenshot" width="300">
+  <img src="./diagram.png" alt="screenshot" width="600">
 </p>
 
 ---
@@ -24,7 +24,7 @@
 ## WIREFRAME
 
 <p align="center">
-  <img src="./wireframe.png" alt="screenshot" width="250">
+  <img src="./wireframe.png" alt="screenshot" width="350">
 </p>
 
 ## 0.Setup
