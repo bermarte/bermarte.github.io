@@ -15,13 +15,17 @@
 
 ## User Story Dependencies
 
-![Story Dependency Diagram](./diagram.png)
+<p align="center">
+  <img src="./diagram.png" alt="screenshot" width="300">
+</p>
 
 ---
 
 ## WIREFRAME
 
-## ![wireframe](./wireframe.png)
+<p align="center">
+  <img src="./wireframe.png" alt="screenshot" width="250">
+</p>
 
 ## 0.Setup
 
