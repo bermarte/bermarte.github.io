@@ -30,7 +30,7 @@
 ## 0.Setup
 
 The project is built on an existing repo,
-so all the HTML and the CSS was already provided. This is why this development strategy is a bit different than usual. 
+so all the HTML and the CSS are already provided. This is why this development strategy is a bit different than usual. 
 
 ---
 

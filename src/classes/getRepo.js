@@ -1,7 +1,11 @@
 'use strict';
 
 import { repos } from '../data.js';
+import { logger } from '../../lib/logger.js';
 
+/**
+ * class Repo, creates a div element containing a link to a gitHub repository
+ */
 class Repo {
     constructor(user, dom) {
         this.user = user;
@@ -43,3 +47,7 @@ class Repo {
 export {
     Repo
 };
+
+logger.add({
+    class: 'Repo'
+});
