@@ -12,11 +12,11 @@ class Repos {
         this.user = user;
         this.dom = dom;
     }
-    render() {
+    async render() {
         const user = this.user;
         for (let repo of repos.selected){
-            const singleRepo = new Repo(user, repo)
-            this.dom.appendChild(singleRepo.render());
+            const singleRepo = await new Repo(user, repo)
+            await this.dom.appendChild(await singleRepo.render());
         }
     }
 }

@@ -16,11 +16,13 @@ class Repo {
         this.repo = repo;
     }
 
-    render() {
-        const urlRepo = `https://api.github.com/repos/${this.user}/${this.repo}`;
+    async render() {
+        const urlRepo = await fetch(`https://api.github.com/repos/${this.user}/${this.repo}`);
+        const response = await urlRepo.json();
+        console.log(response.description);
         const div = document.createElement("div");
         const a = document.createElement("a");
-        a.href = urlRepo;
+        a.href = response;
         div.classList.add("git-item");
         const url = repos.imgUrls[this.repo];
         div.style.backgroundImage = `url(${url})`;
