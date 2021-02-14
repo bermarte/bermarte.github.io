@@ -2,7 +2,7 @@
 import { logger } from '../../lib/logger.js';
 
 const content = document.querySelector('#github-projects');
-import { Repo } from "../classes/getRepo.js";
+import { Repos } from "../classes/getRepos.js";
 
 /**
  * loader of a repo object
@@ -10,7 +10,7 @@ import { Repo } from "../classes/getRepo.js";
 function loadGit(){
     console.log('from loadGit function');
 
-    const gitContent = new Repo('bermarte', content);
+    const gitContent = new Repos('bermarte', content);
     gitContent.render();
 }
 

@@ -1,7 +1,6 @@
 'use strict';
 
 const repos = {
-    repoNames: [],
     selected: [
         'websites-exercises',
         'Project',
