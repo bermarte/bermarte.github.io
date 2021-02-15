@@ -19,17 +19,29 @@ class Repo {
     async render() {
         const urlRepo = await fetch(`https://api.github.com/repos/${this.user}/${this.repo}`);
         const response = await urlRepo.json();
-        console.log(response.description);
         const div = document.createElement("div");
         const a = document.createElement("a");
-        a.href = response;
+        console.log(response);
+        //repo's homepage
+        a.href = response.homepage;
         div.classList.add("git-item");
         const url = repos.imgUrls[this.repo];
         div.style.backgroundImage = `url(${url})`;
         const h1 = document.createElement("h1");
         h1.innerText = this.repo;
+        //add info
+        const label = document.createElement("span");
+        h1.appendChild(label);
+
+        div.onmouseover = function(){
+            label.innerHTML=`<br>${response.description}`;
+        };
+        div.onmouseout = function(){
+            label.innerHTML='';
+        };
+
         a.appendChild(h1);
-        div.appendChild(a);
+        div.appendChild(a);    
         return div;
     };
 }

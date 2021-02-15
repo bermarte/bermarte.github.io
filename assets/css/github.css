@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400&display=swap');
 .validator{
     margin-top: 60px;
 }
@@ -31,7 +32,7 @@
 .git-item h1{
     color: #252D40;
     padding: 6px;
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     text-align:center;
     background-color: #BCC6CC;
@@ -47,4 +48,8 @@
 .git-item:hover{
     filter: sepia(0%) hue-rotate(0deg) saturate(100%);
     padding: 30px 0px;
+}
+span{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: rgb(130, 214, 151);
 }
